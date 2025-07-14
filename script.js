@@ -1,5 +1,5 @@
 const val = parseInt(Math.floor(1 + Math.random() * 11));
-console.log(val);
+
 
 Topic = document.getElementById("Topic");
 if (val == 1) {
@@ -36,9 +36,9 @@ if (val == 1) {
             question: "Which of these is an unsupervised learning algorithm?",
             answers: [
                 { text: "Decision Trees", correct: false },
-                { text: "K-Means Clustering", correct: true },
                 { text: "Random Forest", correct: false },
                 { text: "Naive Bayes", correct: false },
+                { text: "K-Means Clustering", correct: true },
             ]
         },
         {
@@ -63,9 +63,9 @@ if (val == 1) {
             question: "What does a confusion matrix show?",
             answers: [
                 { text: "Confused data", correct: false },
-                { text: "Performance of a classification model", correct: true },
                 { text: "Number of neurons in a neural network", correct: false },
                 { text: "Size of training dataset", correct: false },
+                { text: "Performance of a classification model", correct: true },
             ]
         },
         {
@@ -190,10 +190,10 @@ if (val == 1) {
         {
             question: "Which HTML tag is used to create a hyperlink?",
             answers: [
-                { text: "<link>", correct: false },
-                { text: "<a>", correct: true },
-                { text: "<href>", correct: false },
-                { text: "<url>", correct: false },
+                { text: "&lt;a&gt;", correct: true },
+                { text: "&lt;link&gt;", correct: false },
+                { text: "&lt;href&gt;", correct: false },
+                { text: "&lt;url&gt;", correct: false },
             ]
         },
         {
@@ -217,19 +217,19 @@ if (val == 1) {
         {
             question: "What is the correct HTML element for inserting a line break?",
             answers: [
-                { text: "<br>", correct: true },
-                { text: "<lb>", correct: false },
-                { text: "<break>", correct: false },
-                { text: "<newline>", correct: false },
+                { text: "&lt;lb&gt;", correct: false },
+                { text: "&lt;break&gt;", correct: false },
+                { text: "&lt;newline&gt;", correct: false },
+                { text: "&lt;br&gt;", correct: true },
             ]
         },
         {
             question: "Which tag is used to include JavaScript in HTML?",
             answers: [
-                { text: "<javascript>", correct: false },
-                { text: "<js>", correct: false },
-                { text: "<script>", correct: true },
-                { text: "<code>", correct: false },
+                { text: "&lt;javascript&gt;", correct: false },
+                { text: "&lt;js&gt;", correct: false },
+                { text: "&lt;script&gt;", correct: true },
+                { text: "&lt;code&gt;", correct: false },
             ]
         },
         {
@@ -347,9 +347,9 @@ if (val == 1) {
             question: "What is the time complexity of binary search on a sorted array?",
             answers: [
                 { text: "O(n)", correct: false },
-                { text: "O(log n)", correct: true },
                 { text: "O(n^2)", correct: false },
                 { text: "O(1)", correct: false },
+                { text: "O(log n)", correct: true },
             ]
         },
         {
@@ -365,8 +365,8 @@ if (val == 1) {
             question: "Which of the following is a non-linear data structure?",
             answers: [
                 { text: "Array", correct: false },
-                { text: "Linked List", correct: false },
                 { text: "Tree", correct: true },
+                { text: "Linked List", correct: false },
                 { text: "Queue", correct: false },
             ]
         },
@@ -375,8 +375,8 @@ if (val == 1) {
             answers: [
                 { text: "O(n log n)", correct: false },
                 { text: "O(log n)", correct: false },
-                { text: "O(n^2)", correct: true },
                 { text: "O(n)", correct: false },
+                { text: "O(n^2)", correct: true },
             ]
         },
         {
@@ -391,8 +391,8 @@ if (val == 1) {
         {
             question: "What is a hash table used for?",
             answers: [
-                { text: "Storing data in order", correct: false },
                 { text: "Fast data retrieval using keys", correct: true },
+                { text: "Storing data in order", correct: false },
                 { text: "Compressing data", correct: false },
                 { text: "Sorting elements", correct: false },
             ]
@@ -401,8 +401,8 @@ if (val == 1) {
             question: "Which traversal method is used to visit all nodes of a binary tree in sorted order?",
             answers: [
                 { text: "Preorder", correct: false },
-                { text: "Postorder", correct: false },
                 { text: "Inorder", correct: true },
+                { text: "Postorder", correct: false },
                 { text: "Level-order", correct: false },
             ]
         }
@@ -513,17 +513,17 @@ if (val == 1) {
             question: "Who wrote the play 'Romeo and Juliet'?",
             answers: [
                 { text: "Leo Tolstoy", correct: false },
-                { text: "William Shakespeare", correct: true },
                 { text: "Charles Dickens", correct: false },
+                { text: "William Shakespeare", correct: true },
                 { text: "Jane Austen", correct: false },
             ]
         },
         {
             question: "What is the capital city of Japan?",
             answers: [
+                { text: "Tokyo", correct: true },
                 { text: "Beijing", correct: false },
                 { text: "Seoul", correct: false },
-                { text: "Tokyo", correct: true },
                 { text: "Bangkok", correct: false },
             ]
         },
@@ -531,9 +531,9 @@ if (val == 1) {
             question: "Which planet is known as the Red Planet?",
             answers: [
                 { text: "Venus", correct: false },
-                { text: "Mars", correct: true },
                 { text: "Jupiter", correct: false },
                 { text: "Saturn", correct: false },
+                { text: "Mars", correct: true },
             ]
         },
         {
@@ -566,9 +566,9 @@ if (val == 1) {
         {
             question: "What is the currency of the United Kingdom?",
             answers: [
+                { text: "Pound Sterling", correct: true },
                 { text: "Euro", correct: false },
                 { text: "Dollar", correct: false },
-                { text: "Pound Sterling", correct: true },
                 { text: "Franc", correct: false },
             ]
         }
@@ -670,20 +670,23 @@ if (val == 1) {
         {
             question: "Which keyword is used to define a function in Python?",
             answers: [
-                { text: "function", correct: false },
                 { text: "def", correct: true },
+                { text: "function", correct: false },
                 { text: "fun", correct: false },
                 { text: "define", correct: false },
             ]
         },
         {
+
             question: "What is the output of: print(type([]))?",
             answers: [
-                { text: "<class 'list'>", correct: true },
-                { text: "<class 'tuple'>", correct: false },
-                { text: "<class 'dict'>", correct: false },
-                { text: "<class 'set'>", correct: false },
+                { text: "&lt;class 'list'&gt;", correct: true },
+                { text: "&lt;class 'tuple'&gt;", correct: false },
+                { text: "&lt;class 'dict'&gt;", correct: false },
+                { text: "&lt;class 'set'&gt;", correct: false },
             ]
+
+
         },
         {
             question: "How do you insert comments in Python code?",
@@ -691,16 +694,16 @@ if (val == 1) {
                 { text: "// This is a comment", correct: false },
                 { text: "/* This is a comment */", correct: false },
                 { text: "# This is a comment", correct: true },
-                { text: "<!-- This is a comment -->", correct: false },
+                { text: "&lt;!-- This is a comment --&gt;", correct: false },
             ]
         },
         {
             question: "Which of these is not a Python data type?",
             answers: [
                 { text: "list", correct: false },
-                { text: "array", correct: true },
                 { text: "tuple", correct: false },
                 { text: "set", correct: false },
+                { text: "array", correct: true },
             ]
         },
         {
@@ -716,16 +719,16 @@ if (val == 1) {
             question: "What is the correct file extension for Python files?",
             answers: [
                 { text: ".pt", correct: false },
-                { text: ".py", correct: true },
                 { text: ".pyt", correct: false },
                 { text: ".python", correct: false },
+                { text: ".py", correct: true },
             ]
         },
         {
             question: "How do you start a for loop in Python?",
             answers: [
-                { text: "for(i = 0; i < 5; i++)", correct: false },
                 { text: "for i in range(5):", correct: true },
+                { text: "for(i = 0; i < 5; i++)", correct: false },
                 { text: "foreach i in range(5)", correct: false },
                 { text: "loop i from 1 to 5", correct: false },
             ]
@@ -752,9 +755,9 @@ if (val == 1) {
             question: "What is the output of: bool('False')?",
             answers: [
                 { text: "False", correct: false },
-                { text: "True", correct: true },
                 { text: "None", correct: false },
                 { text: "Error", correct: false },
+                { text: "True", correct: true },
             ]
         },
         {
@@ -881,26 +884,26 @@ if (val == 1) {
         {
             question: "Which device forwards data packets between networks?",
             answers: [
-                { text: "Router", correct: true },
                 { text: "Switch", correct: false },
                 { text: "Modem", correct: false },
+                { text: "Router", correct: true },
                 { text: "Repeater", correct: false },
             ]
         },
         {
             question: "Which layer of the OSI model is responsible for end-to-end communication?",
             answers: [
-                { text: "Transport layer", correct: true },
                 { text: "Network layer", correct: false },
                 { text: "Session layer", correct: false },
                 { text: "Data link layer", correct: false },
+                { text: "Transport layer", correct: true },
             ]
         },
         {
             question: "Which protocol is used to send emails?",
             answers: [
-                { text: "SMTP", correct: true },
                 { text: "HTTP", correct: false },
+                { text: "SMTP", correct: true },
                 { text: "FTP", correct: false },
                 { text: "SNMP", correct: false },
             ]
@@ -909,16 +912,16 @@ if (val == 1) {
             question: "What is the default port number for HTTP?",
             answers: [
                 { text: "443", correct: false },
-                { text: "80", correct: true },
                 { text: "21", correct: false },
                 { text: "25", correct: false },
+                { text: "80", correct: true },
             ]
         },
         {
             question: "Which protocol is used to assign IP addresses automatically?",
             answers: [
-                { text: "DNS", correct: false },
                 { text: "DHCP", correct: true },
+                { text: "DNS", correct: false },
                 { text: "ARP", correct: false },
                 { text: "ICMP", correct: false },
             ]
@@ -926,9 +929,9 @@ if (val == 1) {
         {
             question: "Which of the following is a private IP address?",
             answers: [
-                { text: "192.168.1.1", correct: true },
                 { text: "8.8.8.8", correct: false },
                 { text: "172.0.0.1", correct: false },
+                { text: "192.168.1.1", correct: true },
                 { text: "203.0.113.1", correct: false },
             ]
         },
@@ -946,16 +949,16 @@ if (val == 1) {
             answers: [
                 { text: "Mesh", correct: false },
                 { text: "Ring", correct: false },
-                { text: "Star", correct: true },
                 { text: "Bus", correct: false },
+                { text: "Star", correct: true },
             ]
         },
         {
             question: "What is the function of a switch in networking?",
             answers: [
                 { text: "Provides internet connection", correct: false },
-                { text: "Connects different networks", correct: false },
                 { text: "Transfers data between devices within the same network", correct: true },
+                { text: "Connects different networks", correct: false },
                 { text: "Amplifies network signal", correct: false },
             ]
         }
@@ -1058,9 +1061,9 @@ if (val == 1) {
             question: "What does 'cybersecurity' primarily protect?",
             answers: [
                 { text: "Physical buildings", correct: false },
-                { text: "Computer systems and data", correct: true },
                 { text: "Wires and cables", correct: false },
                 { text: "Office furniture", correct: false },
+                { text: "Computer systems and data", correct: true },
             ]
         },
         {
@@ -1084,8 +1087,8 @@ if (val == 1) {
         {
             question: "What does a firewall do?",
             answers: [
-                { text: "Detects hard drive errors", correct: false },
                 { text: "Blocks unauthorized access to a network", correct: true },
+                { text: "Detects hard drive errors", correct: false },
                 { text: "Speeds up your internet", correct: false },
                 { text: "Creates backups", correct: false },
             ]
@@ -1095,8 +1098,8 @@ if (val == 1) {
             answers: [
                 { text: "A secure software", correct: false },
                 { text: "A type of antivirus", correct: false },
-                { text: "Malicious software designed to harm", correct: true },
                 { text: "A backup tool", correct: false },
+                { text: "Malicious software designed to harm", correct: true },
             ]
         },
         {
@@ -1113,8 +1116,8 @@ if (val == 1) {
             answers: [
                 { text: "Using a strong password", correct: false },
                 { text: "Using two devices at once", correct: false },
-                { text: "A second layer of security like OTP or biometric", correct: true },
                 { text: "Changing passwords monthly", correct: false },
+                { text: "A second layer of security like OTP or biometric", correct: true },
             ]
         },
         {
@@ -1139,8 +1142,8 @@ if (val == 1) {
             question: "How often should you update your software to stay secure?",
             answers: [
                 { text: "Only when the computer crashes", correct: false },
-                { text: "Never", correct: false },
                 { text: "As soon as updates are available", correct: true },
+                { text: "Never", correct: false },
                 { text: "Once a year", correct: false },
             ]
         }
@@ -1241,8 +1244,8 @@ if (val == 1) {
         {
             question: "What is Artificial Intelligence (AI)?",
             answers: [
-                { text: "Programming with HTML and CSS", correct: false },
                 { text: "Simulating human intelligence using machines", correct: true },
+                { text: "Programming with HTML and CSS", correct: false },
                 { text: "Building robots only", correct: false },
                 { text: "An advanced video game", correct: false },
             ]
@@ -1250,9 +1253,9 @@ if (val == 1) {
         {
             question: "Which of the following is an application of AI?",
             answers: [
-                { text: "Voice Assistants", correct: true },
                 { text: "Air conditioners", correct: false },
                 { text: "Microwave ovens", correct: false },
+                { text: "Voice Assistants", correct: true },
                 { text: "Electric bulbs", correct: false },
             ]
         },
@@ -1270,24 +1273,24 @@ if (val == 1) {
             answers: [
                 { text: "A social network", correct: false },
                 { text: "A network of physical wires", correct: false },
-                { text: "A model inspired by the human brain", correct: true },
                 { text: "A computer virus", correct: false },
+                { text: "A model inspired by the human brain", correct: true },
             ]
         },
         {
             question: "What is the purpose of training data in AI?",
             answers: [
                 { text: "To connect to the internet", correct: false },
-                { text: "To teach models to make predictions", correct: true },
                 { text: "To clean the hard disk", correct: false },
                 { text: "To build websites", correct: false },
+                { text: "To teach models to make predictions", correct: true },
             ]
         },
         {
             question: "Which of these is an AI technique that mimics human decision-making?",
             answers: [
-                { text: "Decision Trees", correct: true },
                 { text: "Wi-Fi routers", correct: false },
+                { text: "Decision Trees", correct: true },
                 { text: "Web scraping", correct: false },
                 { text: "Cloud storage", correct: false },
             ]
@@ -1296,16 +1299,16 @@ if (val == 1) {
             question: "What is reinforcement learning?",
             answers: [
                 { text: "Learning by watching videos", correct: false },
-                { text: "Learning from rewards and punishments", correct: true },
                 { text: "Memorizing answers", correct: false },
+                { text: "Learning from rewards and punishments", correct: true },
                 { text: "Copying another AI model", correct: false },
             ]
         },
         {
             question: "What is the full form of NLP in AI?",
             answers: [
-                { text: "New Learning Protocol", correct: false },
                 { text: "Natural Language Processing", correct: true },
+                { text: "New Learning Protocol", correct: false },
                 { text: "Non-Linear Programming", correct: false },
                 { text: "Neural Link Processor", correct: false },
             ]
@@ -1314,9 +1317,9 @@ if (val == 1) {
             question: "Which of these is an example of computer vision?",
             answers: [
                 { text: "Playing music", correct: false },
-                { text: "Recognizing faces in images", correct: true },
                 { text: "Browsing the internet", correct: false },
                 { text: "Typing a document", correct: false },
+                { text: "Recognizing faces in images", correct: true },
             ]
         },
         {
@@ -1332,8 +1335,8 @@ if (val == 1) {
             question: "What is the difference between AI and Machine Learning?",
             answers: [
                 { text: "AI is a subset of ML", correct: false },
-                { text: "ML is a subset of AI", correct: true },
                 { text: "They are the same", correct: false },
+                { text: "ML is a subset of AI", correct: true },
                 { text: "ML is used only in robotics", correct: false },
             ]
         },
@@ -1444,8 +1447,8 @@ if (val == 1) {
             question: "What is the value of π (pi) approximately?",
             answers: [
                 { text: "2.14", correct: false },
-                { text: "3.14", correct: true },
                 { text: "4.13", correct: false },
+                { text: "3.14", correct: true },
                 { text: "1.41", correct: false },
             ]
         },
@@ -1470,8 +1473,8 @@ if (val == 1) {
         {
             question: "What is the area of a circle with radius 3?",
             answers: [
-                { text: "9π", correct: true },
                 { text: "6π", correct: false },
+                { text: "9π", correct: true },
                 { text: "3π", correct: false },
                 { text: "12π", correct: false },
             ]
@@ -1480,17 +1483,17 @@ if (val == 1) {
             question: "What is the solution to the equation: x + 5 = 12?",
             answers: [
                 { text: "x = 6", correct: false },
-                { text: "x = 7", correct: true },
                 { text: "x = 8", correct: false },
                 { text: "x = 9", correct: false },
+                { text: "x = 7", correct: true },
             ]
         },
         {
             question: "What is 25% of 200?",
             answers: [
-                { text: "50", correct: true },
                 { text: "25", correct: false },
                 { text: "75", correct: false },
+                { text: "50", correct: true },
                 { text: "100", correct: false },
             ]
         },
@@ -1499,8 +1502,8 @@ if (val == 1) {
             answers: [
                 { text: "1", correct: false },
                 { text: "0.25", correct: false },
-                { text: "0.5", correct: true },
                 { text: "2", correct: false },
+                { text: "0.5", correct: true },
             ]
         },
         {
@@ -1516,8 +1519,8 @@ if (val == 1) {
             question: "What is the value of 2⁴?",
             answers: [
                 { text: "6", correct: false },
-                { text: "8", correct: false },
                 { text: "16", correct: true },
+                { text: "8", correct: false },
                 { text: "14", correct: false },
             ]
         },
@@ -1525,17 +1528,17 @@ if (val == 1) {
             question: "What shape has 3 sides?",
             answers: [
                 { text: "Square", correct: false },
-                { text: "Triangle", correct: true },
                 { text: "Rectangle", correct: false },
                 { text: "Circle", correct: false },
+                { text: "Triangle", correct: true },
             ]
         },
         {
             question: "If a triangle has angles 90°, 45°, and 45°, what type of triangle is it?",
             answers: [
+                { text: "Isosceles Right Triangle", correct: true },
                 { text: "Equilateral", correct: false },
                 { text: "Scalene", correct: false },
-                { text: "Isosceles Right Triangle", correct: true },
                 { text: "Acute", correct: false },
             ]
         },
@@ -1543,9 +1546,9 @@ if (val == 1) {
             question: "What is 3! (3 factorial)?",
             answers: [
                 { text: "3", correct: false },
-                { text: "6", correct: true },
                 { text: "9", correct: false },
                 { text: "12", correct: false },
+                { text: "6", correct: true },
             ]
         }
     ];
@@ -1645,18 +1648,18 @@ if (val == 1) {
         {
             question: "What is an Operating System?",
             answers: [
-                { text: "A type of software that manages hardware and software resources", correct: true },
                 { text: "A hardware device", correct: false },
                 { text: "A programming language", correct: false },
                 { text: "A web browser", correct: false },
+                { text: "A type of software that manages hardware and software resources", correct: true },
             ]
         },
         {
             question: "Which of the following is **not** an operating system?",
             answers: [
                 { text: "Windows", correct: false },
-                { text: "Linux", correct: false },
                 { text: "Oracle", correct: true },
+                { text: "Linux", correct: false },
                 { text: "macOS", correct: false },
             ]
         },
@@ -1708,9 +1711,9 @@ if (val == 1) {
         {
             question: "What is virtual memory?",
             answers: [
+                { text: "A portion of the hard disk used as RAM", correct: true },
                 { text: "A flash drive", correct: false },
                 { text: "Memory on the graphics card", correct: false },
-                { text: "A portion of the hard disk used as RAM", correct: true },
                 { text: "ROM memory used for booting", correct: false },
             ]
         },
@@ -1718,17 +1721,17 @@ if (val == 1) {
             question: "Which of the following is used for multitasking?",
             answers: [
                 { text: "Compilers", correct: false },
-                { text: "Threading", correct: true },
                 { text: "Formatting", correct: false },
                 { text: "Data structures", correct: false },
+                { text: "Threading", correct: true },
             ]
         },
         {
             question: "Which operating system is open-source?",
             answers: [
                 { text: "Windows", correct: false },
-                { text: "Linux", correct: true },
                 { text: "macOS", correct: false },
+                { text: "Linux", correct: true },
                 { text: "DOS", correct: false },
             ]
         },
@@ -1744,8 +1747,8 @@ if (val == 1) {
         {
             question: "Which command is used to shut down a Windows computer from the command line?",
             answers: [
-                { text: "shutdown /s", correct: true },
                 { text: "exit", correct: false },
+                { text: "shutdown /s", correct: true },
                 { text: "poweroff", correct: false },
                 { text: "halt", correct: false },
             ]
@@ -1864,10 +1867,10 @@ if (val == 1) {
         {
             question: "What does SaaS stand for?",
             answers: [
-                { text: "Software as a Service", correct: true },
                 { text: "Storage as a Software", correct: false },
                 { text: "Server as a Software", correct: false },
                 { text: "System as a Server", correct: false },
+                { text: "Software as a Service", correct: true },
             ]
         },
         {
@@ -1882,9 +1885,9 @@ if (val == 1) {
         {
             question: "What does PaaS provide?",
             answers: [
+                { text: "Platform to build and deploy applications", correct: true },
                 { text: "Virtual machines only", correct: false },
                 { text: "Networking devices", correct: false },
-                { text: "Platform to build and deploy applications", correct: true },
                 { text: "Operating systems only", correct: false },
             ]
         },
@@ -1893,8 +1896,8 @@ if (val == 1) {
             answers: [
                 { text: "Higher electricity costs", correct: false },
                 { text: "Manual software installation", correct: false },
-                { text: "Scalability and flexibility", correct: true },
                 { text: "Data loss guarantee", correct: false },
+                { text: "Scalability and flexibility", correct: true },
             ]
         },
         {
@@ -1910,16 +1913,16 @@ if (val == 1) {
             question: "What does 'public cloud' mean?",
             answers: [
                 { text: "Cloud inside your PC", correct: false },
-                { text: "Cloud for one organization only", correct: false },
                 { text: "Cloud resources shared over the internet", correct: true },
+                { text: "Cloud for one organization only", correct: false },
                 { text: "Cloud you buy at a store", correct: false },
             ]
         },
         {
             question: "What is cloud storage?",
             answers: [
-                { text: "Storage in a physical hard disk", correct: false },
                 { text: "Storage accessible over the internet", correct: true },
+                { text: "Storage in a physical hard disk", correct: false },
                 { text: "Storage in CDs", correct: false },
                 { text: "RAM storage", correct: false },
             ]
@@ -1928,9 +1931,9 @@ if (val == 1) {
             question: "Which service is used for storing files in Google Cloud?",
             answers: [
                 { text: "Google Docs", correct: false },
-                { text: "Google Cloud Storage", correct: true },
                 { text: "Google Maps", correct: false },
                 { text: "Google Chrome", correct: false },
+                { text: "Google Cloud Storage", correct: true },
             ]
         },
         {
